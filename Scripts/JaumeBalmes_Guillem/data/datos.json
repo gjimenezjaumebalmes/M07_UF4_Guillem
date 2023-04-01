@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "nombre": "María Gómez",
+      "nombre": "Maria Gomez",
       "asignatura": "Lengua y Literatura",
       "email": "maria.gomez@ejemplo.com",
       "curso": "2n de Barchillero"
@@ -25,38 +25,38 @@
   "alumnado": [
     {
       "id": 1,
-      "nombre": "Ana Martínez",
-      "curso": "1º de Bachillerato",
+      "nombre": "Ana Martinez",
+      "curso": "1r de Bachillerato",
       "email": "ana.martinez@ejemplo.com"
     },
     {
       "id": 2,
-      "nombre": "Carlos Rodríguez",
-      "curso": "2º de ESO",
+      "nombre": "Carlos Rodriguez",
+      "curso": "2n de ESO",
       "email": "carlos.rodriguez@ejemplo.com"
     },
     {
       "id": 3,
-      "nombre": "Lucía Sánchez",
-      "curso": "3º de ESO",
+      "nombre": "Lucia Sanchez",
+      "curso": "3r de ESO",
       "email": "lucia.sanchez@ejemplo.com"
     },
     {
       "id": 4,
-      "nombre": "Alberto Pérez",
-      "curso": "1º de Bachillerato",
+      "nombre": "Alberto Perez",
+      "curso": "1r de Bachillerato",
       "email": "alberto.perez@ejemplo.com"
     },
     {
       "id": 5,
-      "nombre": "María López",
-      "curso": "4º de ESO",
+      "nombre": "Maria Lopez",
+      "curso": "4t de ESO",
       "email": "maria.lopez@ejemplo.com"
     },
     {
       "id": 6,
-      "nombre": "Jorge González",
-      "curso": "2º de Bachillerato",
+      "nombre": "Jorge Gonzalez",
+      "curso": "2n de Bachillerato",
       "email": "jorge.gonzalez@ejemplo.com"
     }
   ]
