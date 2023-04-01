@@ -1,0 +1,16 @@
+<!-- header -->
+{% include 'header.html' %}
+<meta charset="UTF-8">
+<main>
+    <!-- contenido de la página -->
+    {% block content %}
+    <h1>{{ alumno.nombre }}</h1>
+    <ul>
+        <li><strong>id:</strong> {{ alumno.id }}</li>
+        <li><strong>Nombre:</strong> {{ alumno.nombre }}</li>
+        <li><strong>Curso:</strong> {{ alumno.curso }}</li>
+        <li><strong>Email:</strong> {{ alumno.email }}</li>
+    </ul>
+    {% endblock %}
+    <p><a href="{% url 'alumno_list' %}">Volver a la lista de alumnos</a></p>
+</main>

@@ -3,20 +3,23 @@
 <!-- header -->
 {% include 'header.html' %}
 
-<main>
-    <!-- contenido de la página -->
-</main>
 <head>
     <title>Alumnado</title>
 </head>
+
 <body>
-{% block content %}
 <h1>Alumnado</h1>
 <ul>
     {% for alumno in alumnado %}
-    <li>{{ alumno.nombre }} - {{ alumno.curso }} - {{ alumno.email }}</li>
+    {% if alumno.id %}
+    <li>
+        <a href="{% url 'alumno_detail' pk=alumno.id %}">{{ alumno.nombre }}</a>
+    </li>
+    {% else %}
+    <li>
+        {{ alumno.nombre }}
+    </li>
+    {% endif %}
     {% endfor %}
 </ul>
-{% endblock %}
 </body>
-</html>
