@@ -1,0 +1,51 @@
+{
+  "profesorado": [
+    {
+      "nombre": "Juan Pérez",
+      "asignatura": "Matemáticas",
+      "email": "juan.perez@ejemplo.com"
+    },
+    {
+      "nombre": "María Gómez",
+      "asignatura": "Lengua y Literatura",
+      "email": "maria.gomez@ejemplo.com"
+    },
+    {
+      "nombre": "Pedro González",
+      "asignatura": "Física y Química",
+      "email": "pedro.gonzalez@ejemplo.com"
+    }
+  ],
+  "alumnado": [
+    {
+      "nombre": "Ana Martínez",
+      "curso": "1º de Bachillerato",
+      "email": "ana.martinez@ejemplo.com"
+    },
+    {
+      "nombre": "Carlos Rodríguez",
+      "curso": "2º de ESO",
+      "email": "carlos.rodriguez@ejemplo.com"
+    },
+    {
+      "nombre": "Lucía Sánchez",
+      "curso": "3º de ESO",
+      "email": "lucia.sanchez@ejemplo.com"
+    },
+    {
+      "nombre": "Alberto Pérez",
+      "curso": "1º de Bachillerato",
+      "email": "alberto.perez@ejemplo.com"
+    },
+    {
+      "nombre": "María López",
+      "curso": "4º de ESO",
+      "email": "maria.lopez@ejemplo.com"
+    },
+    {
+      "nombre": "Jorge González",
+      "curso": "2º de Bachillerato",
+      "email": "jorge.gonzalez@ejemplo.com"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+{% include 'header.html' %}
+
+<main>
+    <!-- contenido de la página -->
+</main>
+<head>
+    <title>Alumnado</title>
+</head>
+<body>
+{% block content %}
+<h1>Alumnado</h1>
+<ul>
+    {% for alumno in alumnado %}
+    <li>{{ alumno.nombre }} - {{ alumno.curso }} - {{ alumno.email }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+</body>
+</html>

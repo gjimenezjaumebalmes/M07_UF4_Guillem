@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+{% include 'header.html' %}
+
+<main>
+    <!-- contenido de la página -->
+</main>
+<head>
+    <title>Profesorado</title>
+</head>
+<body>
+<h1>Profesorado</h1>
+<!--Profesorado-->
+<ul>
+    {% for profesor in profesorado_list %}
+    <li><a href="{% url 'profesor_detail' profesor.id %}">{{ profesor.nombre }}</a></li>
+    {% endfor %}
+
+</ul>
+{{ profesorado }}
+</body>
+</html>
