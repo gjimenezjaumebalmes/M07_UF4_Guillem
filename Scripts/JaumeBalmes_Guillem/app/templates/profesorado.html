@@ -3,21 +3,25 @@
 <!-- header -->
 {% include 'header.html' %}
 
-<main>
-    <!-- contenido de la página -->
-</main>
 <head>
     <title>Profesorado</title>
 </head>
+
 <body>
 <h1>Profesorado</h1>
-<!--Profesorado-->
 <ul>
-    {% for profesor in profesorado_list %}
-    <li><a href="{% url 'profesor_detail' profesor.id %}">{{ profesor.nombre }}</a></li>
+    {% for profesor in profesorado %}
+    {% if profesor.id %}
+    <li>
+        <a href="{% url 'profesor_detail' pk=profesor.id %}">{{ profesor.nombre }}</a>
+    </li>
+    {% else %}
+    <li>
+        {{ profesor.nombre }}
+    </li>
+    {% endif %}
     {% endfor %}
-
 </ul>
-{{ profesorado }}
 </body>
+
 </html>

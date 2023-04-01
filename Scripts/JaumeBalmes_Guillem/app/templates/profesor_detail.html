@@ -3,8 +3,6 @@
 <meta charset="UTF-8">
 <main>
     <!-- contenido de la página -->
-    {% extends 'principal.html' %}
-
     {% block content %}
     <h1>{{ profesor.nombre }}</h1>
     <ul>
@@ -14,5 +12,5 @@
         <li><strong>Email:</strong> {{ profesor.email }}</li>
     </ul>
     {% endblock %}
-    <p><a href="{% url 'profesorado_list' %}">Volver a la lista de profesores</a></p>
+    <p><a href="{% url 'profesor_list' %}">Volver a la lista de profesores</a></p>
 </main>
