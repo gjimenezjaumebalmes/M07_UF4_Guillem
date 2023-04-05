@@ -10,7 +10,7 @@
 <body>
 <h1>Profesorado</h1>
 <ul>
-    {% for profesor in profesorado %}
+    {% for profesor in profesores %}
     {% if profesor.id %}
     <li>
         <a href="{% url 'profesor_detail' pk=profesor.id %}">{{ profesor.nombre }}</a>
@@ -24,4 +24,3 @@
 </ul>
 </body>
 
-</html>

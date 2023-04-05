@@ -10,7 +10,7 @@
 <body>
 <h1>Alumnado</h1>
 <ul>
-    {% for alumno in alumnado %}
+    {% for alumno in alumnos %}
     {% if alumno.id %}
     <li>
         <a href="{% url 'alumno_detail' pk=alumno.id %}">{{ alumno.nombre }}</a>
