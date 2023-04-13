@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+{% include 'header.html' %}
+
+<head>
+    <title>Editar Alumno</title>
+</head>
+
+<body>
+<h1>Editar Alumno</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value="{{ profesor.nombre }}"><br>
+    <label for="curso">Curso:</label><br>
+    <input type="text" id="curso" name="curso" value="{{ profesor.curso }}"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" value="{{ profesor.email }}"><br><br>
+    <input type="submit" value="Guardar Cambios">
+</form>
+
+</body>
+</html>
