@@ -104,7 +104,7 @@ def profesor_edit(request, pk):
         if form.is_valid():
             profesor = form.save(commit=False)
             profesor.save()
-            return redirect('profesorado')
+            return redirect('profesor_detail', pk=profesor.pk)
     else:
         form = ProfesorForm(instance=profesor)
 
