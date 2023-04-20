@@ -14,12 +14,12 @@
     {% if alumno.id %}
     <li>
         <a href="{% url 'alumno_detail' pk=alumno.id %}">{{ alumno.nombre }}</a>
-        <form method="POST" action="{% url 'alumno_delete' pk=alumno.id %}" style="display: inline">
-            {% csrf_token %}
-            <input type="hidden" name="_method" value="DELETE">
-            <button type="submit">Eliminar</button>
-        </form>
-        <a href="{% url 'alumno_edit' pk=alumno.id %}">Editar</a>
+<!--        <form method="POST" action="{% url 'alumno_delete' pk=alumno.id %}" style="display: inline">-->
+<!--            {% csrf_token %}-->
+<!--            <input type="hidden" name="_method" value="DELETE">-->
+<!--            <button type="submit">Eliminar</button>-->
+<!--        </form>-->
+<!--        <a href="{% url 'alumno_edit' pk=alumno.id %}">Editar</a>-->
     </li>
     {% else %}
     <li>
