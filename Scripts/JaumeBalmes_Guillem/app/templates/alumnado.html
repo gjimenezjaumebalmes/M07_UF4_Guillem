@@ -12,7 +12,7 @@
 <ul>
     {% for alumno in alumnos %}
     {% if alumno.id %}
-    <li>
+    <li><!--Read -->
         <a href="{% url 'alumno_detail' pk=alumno.id %}">{{ alumno.nombre }}</a>
 <!--        <form method="POST" action="{% url 'alumno_delete' pk=alumno.id %}" style="display: inline">-->
 <!--            {% csrf_token %}-->
